@@ -7,7 +7,9 @@ type Position struct {
 }
 
 func (pos Position) String() string {
-	return fmt.Sprintf("line %d, col %d", pos.Line, pos.Col)
+	// The line number is 0-based, but text editors are usually 1-based.
+	// So the number is incremented by 1 for display.
+	return fmt.Sprintf("line %d, col %d", pos.Line+1, pos.Col)
 }
 
 type pf[T any] struct {

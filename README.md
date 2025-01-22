@@ -139,7 +139,7 @@ func ExampleParser() {
 	}
 	// Output:
 	// {Line:10}, ok=true, err=<nil>
-	// {Line:0}, ok=false, err=Syntax error: GOTO has invalid line number: line 0, col 8
+	// {Line:0}, ok=false, err=Syntax error: GOTO has invalid line number: line 1, col 8
 	// {Line:0}, ok=false, err=<nil>
 }
 ```
